@@ -24,5 +24,8 @@ module.exports = {
         '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       }
     ],
+    ["@semantic-release/github", {
+      "branches": ["master"],
+    }],
   ]
 }
