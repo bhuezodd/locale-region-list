@@ -1,7 +1,10 @@
 name: Release
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
+    paths:
+      - 'src/**'
 jobs:
   release:
     name: Release
