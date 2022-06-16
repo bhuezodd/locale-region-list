@@ -7,36 +7,7 @@ module.exports = {
   tagFormat: namePackage + '-v${version}',
   commitPaths: [`${srcRoot}/*`],
   plguins: [
-    [
-      '@semantic-release/commit-analyzer',
-      {
-        "preset": "eslint",
-        "releaseRules": [
-          {
-            "tag": "Breaking",
-            "release": "major"
-          },
-          {
-            "tag": "New",
-            "release": "minor"
-          },
-          {
-            "subject": "*",
-            "release": "patch"
-          },
-          {
-            "scope": "no-release",
-            "release": false
-          }
-        ],
-        "parserOpts": {
-          "noteKeywords": [
-            "BREAKING CHANGE",
-            "BREAKING CHANGES"
-          ]
-        }
-      }
-    ],
+    '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
