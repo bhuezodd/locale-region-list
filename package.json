@@ -1,0 +1,28 @@
+{
+  "name": "locale-region-list",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "boris huezo",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npx semantic-release-plus --extends ./config/release.config.js"
+  },
+  "keywords": [
+    "locale",
+    "region",
+    "list"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bhuezodd/locale-region-list.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "semantic-release-npm-github-publish": "^1.5.1",
+    "semantic-release-plus": "^20.0.0"
+  }
+}
