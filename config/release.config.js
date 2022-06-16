@@ -29,6 +29,12 @@ module.exports = {
             "release": false
           }
         ],
+        "parserOpts": {
+          "noteKeywords": [
+            "BREAKING CHANGE",
+            "BREAKING CHANGES"
+          ]
+        }
       }
     ],
     '@semantic-release/release-notes-generator',
