@@ -1,4 +1,4 @@
-const namePackage = 'locale-region-list';
+const namePackage = 'locale-region-list-2';
 const srcRoot = `.`;
 
 module.exports = {
