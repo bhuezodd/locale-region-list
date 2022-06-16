@@ -24,10 +24,5 @@ module.exports = {
         '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       }
     ],
-    ["@semantic-release/github", {
-      "assets": [
-        {"path": ".", "label": "semantic-release"},
-      ]
-    }],
   ]
 }
