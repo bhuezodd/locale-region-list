@@ -23,10 +23,10 @@ const getLocaleAndRegion = (lang) => {
 }
 
 /**
- * @namespace main
+ * @namespace getLocalesAndRegions
  * @param {string} languageSelected
  */
-const main = (languageSelected) => {
+const getLocalesAndRegions = (languageSelected) => {
     let result = {
         regions: [],
         locales: []
