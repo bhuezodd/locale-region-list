@@ -23,7 +23,7 @@ const getLocaleAndRegion = (lang) => {
 }
 
 /**
- * 
+ * @namespace main
  * @param {string} languageSelected
  */
 const main = (languageSelected) => {
