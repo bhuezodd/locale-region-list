@@ -39,6 +39,7 @@ const getLocalesAndRegions = (languageSelected) => {
     if (locale) {
         result.locales.push(locale)
     }
+    
     if (typeof navigator !== 'undefined') {
         const languages = navigator.languages
         const data = languages.reduce((obj, lang) => {
