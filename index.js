@@ -1,4 +1,7 @@
-
+/**
+ * 
+ * @param {string} lang
+ */
 const getLocaleAndRegion = (lang) => {
     let obj = {
         locale: '',
