@@ -64,4 +64,4 @@ const getLocalesAndRegions = (languageSelected) => {
     return result
 }
 
-module.exports = main
+module.exports = getLocalesAndRegions
