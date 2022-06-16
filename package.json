@@ -19,10 +19,6 @@
     "type": "git",
     "url": "https://github.com/bhuezodd/locale-region-list.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "tag": "latest"
-  },
   "dependencies": {
     "semantic-release-plus": "^20.0.0"
   },
