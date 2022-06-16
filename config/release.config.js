@@ -7,7 +7,30 @@ module.exports = {
   tagFormat: namePackage + '-v${version}',
   commitPaths: [`${srcRoot}/*`],
   plguins: [
-    '@semantic-release/commit-analyzer',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        "preset": "eslint",
+        "releaseRules": [
+          {
+            "tag": "Breaking",
+            "release": "major"
+          },
+          {
+            "tag": "New",
+            "release": "minor"
+          },
+          {
+            "subject": "*",
+            "release": "patch"
+          },
+          {
+            "scope": "no-release",
+            "release": false
+          }
+        ],
+      }
+    ],
     '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
@@ -20,7 +43,7 @@ module.exports = {
       '@semantic-release/git',
       {
         assets: [`${srcRoot}/index.js`,`${srcRoot}/package.json`, `${srcRoot}/CHANGELOG.md`],
-        message: `feat(version): Release ${namePackage}` +
+        message: `release(version): Release ${namePackage}` +
         '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       }
     ]
