@@ -7,15 +7,7 @@ module.exports = {
   tagFormat: namePackage + '-v${version}',
   commitPaths: [`${srcRoot}/*`],
   plguins: [
-
-    ["@semantic-release/commit-analyzer", {
-      "preset": "angular",
-      "releaseRules": [
-        {"type": "refactor", "release": "patch"},
-        {"type": "fix", "release": "patch"},
-        {"scope": "no-release", "release": false}
-      ]
-    }],
+    '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
