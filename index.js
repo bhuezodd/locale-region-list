@@ -4,14 +4,12 @@
  */
 const getLocaleAndRegion = (lang) => {
     let obj = {
-        locale: '',
-        region: ''
+        locale: null,
+        region: null
     }
+
     if (!lang) {
-        return {
-            locale: null,
-            region: null
-        }
+        return obj
     }
     const [locale, region] = lang.split('-')
     if (region) {
