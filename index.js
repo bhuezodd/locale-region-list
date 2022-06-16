@@ -57,8 +57,6 @@ const main = (languageSelected) => {
         result.regions = [ ...result.regions, ...data.regions]
         result.locales = [...result.locales, ...data.locales]
     }
-    
-    result.locales.push('en')
 
     result.locales = [...new Set(result.locales)]
     result.regions = [...new Set(result.regions)]
