@@ -22,4 +22,5 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_REGISTRY }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN_REGISTRY }}
         run: npm run publish
