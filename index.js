@@ -22,7 +22,10 @@ const getLocaleAndRegion = (lang) => {
     return obj
 }
 
-
+/**
+ * 
+ * @param {string} languageSelected
+ */
 const main = (languageSelected) => {
     let result = {
         regions: [],
